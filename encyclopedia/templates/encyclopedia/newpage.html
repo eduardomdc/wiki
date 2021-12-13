@@ -13,11 +13,11 @@
     {% endif %}
     <form action="{% url 'newpage' %}" method="post">
         {% csrf_token %}
-        Title: <input type="text" name="title">
+        Title: <input type="text" name="title" class="input">
         <br>
         Content:<br>
         <textarea id="content" name="content"></textarea>
         <br>
-        <input type="submit">
+        <input type="submit" class="button">
     </form>
 {% endblock %}

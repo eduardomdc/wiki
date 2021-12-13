@@ -1,7 +1,7 @@
 {% extends "encyclopedia/layout.html" %}
 
 {% block title %}
-    Encyclopedia
+    MyWiki
 {% endblock %}
 
 {% block body %}
@@ -13,6 +13,6 @@
         <textarea id="content" name="content">{{content}}</textarea>
         <br>
         <input type="text" name="title" value="{{title}}" hidden="true">
-        <input type="submit">
+        <input type="submit" class = "button">
     </form>
 {% endblock %}

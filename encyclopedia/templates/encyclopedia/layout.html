@@ -11,7 +11,14 @@
     <body>
         <div class="row">
             <div class="sidebar col-lg-2 col-md-3">
-                <h2>Wiki</h2>
+                <h2 style = "text-align: center">MyWiki</h2>
+                <br>
+                <center>
+                <a href="{% url 'index' %}">
+                <img src="{% static 'encyclopedia/jigsaw.png' %}" width = "150px">
+                </a>
+                </center>
+                <br><br>
                 <form action = "{% url 'search' %}" method = "post">
                     {% csrf_token %}
                     <input class="search" type="text" name="query" placeholder="Search Wiki">

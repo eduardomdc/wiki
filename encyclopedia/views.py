@@ -89,7 +89,7 @@ def article(request, title):
             "title": title,
             })
     else:
-        return HttpResponse('This page is no more G')
+        return render(request, 'encyclopedia/missingpage.html')
 
 def randompage(request):
     return redirect('wiki', random.choice(util.list_entries()))

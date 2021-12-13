@@ -15,6 +15,29 @@ h1 {
 textarea {
     height: 90vh;
     width: 80%;
+    border-radius: 5px;
+    border-color: rgb(180,180,180);
+    border-style: solid;
+    padding: 5px;
+}
+
+textarea:focus {
+    outline-width: 2px;
+    outline-color: rgb(100,100,100);
+}
+
+.input {
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(180,180,180);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.input:focus{
+    outline-width: 2px;
+    outline-color: rgb(100,100,100);
 }
 
 .main {
@@ -25,6 +48,17 @@ textarea {
     width: 100%;
     font-size: 15px;
     line-height: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(180,180,180);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.search:focus {
+    outline-width: 2px;
+    outline-color: rgb(100,100,100);
 }
 
 .sidebar {
@@ -35,4 +69,16 @@ textarea {
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+.button {
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+    color: white;
+    background-color: royalblue;
+}
+
+.button:focus {
+    background-color: indianred;
 }
